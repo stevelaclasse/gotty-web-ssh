@@ -8,6 +8,7 @@ touch ~/.ssh/id_rsa
 cat $GOTTY_SSH_KEY_PATH | sed -r '/^\s*$/d' > ~/.ssh/id_rsa
 echo -e '\n' >>  ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
+export TERM="xterm-256color"
 
 export GOTTY_OPTIONS="--port 8080 --permit-write --permit-arguments"
 
