@@ -4,8 +4,6 @@ ENV CGO_ENABLED=0
 ENV GOOS=linux
 ENV GO111MODULE=on
 
-RUN echo $PATH
-
 RUN mkdir /app && apk add --update --no-cache git make npm openssh openssh-client
 
 COPY . /go/gotty
